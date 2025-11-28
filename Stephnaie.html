@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Stephanie! 🎉</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            color: #5a2a4e;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #d63384;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background: #ffe4ec;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #d63384;
+            border: 5px solid #ffadc9;
+        }
+
+        .birthday-wish {
+            font-style: italic;
+            margin: 25px 0;
+            font-size: 1.3rem;
+            color: #b04a7d;
+        }
+
+        .balloons {
+            font-size: 2.5rem;
+            margin: 15px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        button {
+            background: #ff6b96;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e04e7c;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">🎈🎂🎉</div>
+        <h1>Happy Birthday, Stephanie!</h1>
+       
+        <p class="message">
+           Today is all about celebrating you — your light, your kindness, your strength, and the beautiful way you touch the lives around you. You deserve a year filled with peace, joy, and moments that make your heart feel full.
+
+As you've stepped into this new chapter, I pray it brings you clarity, growth, and every good thing your heart has quietly hoped for. Keep shining, keep smiling, and keep being the amazing person you are. The world is softer and brighter with you in it.
+
+And… I’m thankful for the moments we’ve shared, the laughter, the closeness, the quiet conversations, the energy between us that feels so natural. I hope this year gives us even more memories to hold onto, moments that make us smile for no reason, and chances for our bond to grow in its own honest, beautiful way.
+        </p>
+        <p class="birthday-wish">
+            "Wishing you the happiest birthday, Steph. You truly deserve the best!" 💖
+        </p>
+        <p class="message">
+           From Samuel, who values you in ways words can’t fully express. 😊
+        </p>
+        <button onclick="showSurprise()">Click for a Surprise!</button>
+        <p id="surprise" style="display:none; margin-top:15px; font-weight:600; color:#ff4081;">
+            You're incredible, Stephanie! Hope your day is as special as you are! 🌟🎁
+        </p>
+        <div class="balloons">🎁🎀✨</div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
